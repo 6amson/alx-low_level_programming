@@ -1,39 +1,43 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible combinations of three different digits,
- * in ascending order, separated by a comma followed by a space.
+ * main - prints all possible different combinations of three digits.
+ * Return: Always 0 (Success)
  *
- * Decription: using the script prints combination of three digits.
- *
- * Return: Always 0.
+ * Description - prints all different combinations of three digits
  */
 int main(void)
 {
-	int digit1, digit2, digit3;
+	int n, m, l;
 
-	for (digit1 = 0; digit1 < 8; digit1++)
+	for (n = 48; n < 58; n++)
 	{
-		for (digit2 = digit1 + 1; digit2 < 9; digit2++)
+		for (m = 49; m < 58; m++)
 		{
-			for (digit3 = digit2 + 1; digit3 < 10; digit3++)
+			for (l = 49; l < 58; l++)
 			{
-			putchar ((digit1 % 10) + '0');
-			putchar ((digit1 % 10) + '0');
-			putchar ((digit3 % 10) + '0');
+				if (l > m && m > n)
+				{
+					putchar(n);
+					putchar(m);
+					putchar(l);
+					if (n != 55 || m != 56)
+					{
+						putchar(',');
+						putchar(' ');
 
-			if (digit1 == 7 && digit2 == 8 && digit3 == 9)
-				continue;
+					}
 
-	putchar(',');
-	putchar(' ');
+				}
 
 			}
+
 		}
 
 	}
-
 	putchar('\n');
-
 	return (0);
+
 }
+
+
