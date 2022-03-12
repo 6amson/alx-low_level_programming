@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints alphabeth in lower case
+ * main - prints alphabet in lower case except e and q
  *
  * Decription: using the scrip prints alphabeth in lower case
  *
@@ -15,7 +15,7 @@ int main(void)
 	{
 		if (letter != 'e' && letter != 'q')
 			putchar(letter);
-
+	}
 	putchar('\n');
 
 	return (0);
