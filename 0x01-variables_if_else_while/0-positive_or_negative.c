@@ -3,9 +3,11 @@
 #include <stdio.h>
 
 /**
- *
- * main - prints a random number and states whether 
+ * main - prints a random number and states whether
  * it is positive or negative, or zero.
+ *
+ * Decription: using the main funtion this program
+ * prints negative, positive or zero integres
  *
  * Return: Always 0.
  */
@@ -14,7 +16,7 @@ int main(void)
 	int n;
 
 	srand(time(0));
-	n = rand() - RAND_MAX /2;
+	n = rand() - RAND_MAX / 2;
 
 	if (n > 0)
 		printf("%d is positive\n", n);
