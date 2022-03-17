@@ -6,11 +6,10 @@
  *
  * Return: 1 if character is uppercase, 0 otherwise.
  */
-int _isupper(int c)
+int mul(int a, int b)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (1);
+	int x;
 
-	else
-		return (0);
+	x = a * b;
+return (x);
 }
