@@ -1,16 +1,13 @@
 #include "main.h"
 
 /**
- * _isupper - Checks for uppercase characters.
- * @c: The character to be checked.
- *
- * Return: 1 if character is uppercase, 0 otherwise.
- */
-int _isupper(int c)
+* print_numbers - prints numbers fro 0 to 9
+*/
+void print_numbers(void)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (1);
+	char c;
 
-	else
-		return (0);
+	for (c = '0'; c <= '9'; c++)
+	_putchar(c);
+	_putchar('\n');
 }
